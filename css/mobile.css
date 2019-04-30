@@ -1,0 +1,88 @@
+/* Utility Classes */
+.l-heading {
+  font-size: 2rem;
+}
+
+.lead {
+  font-size: 1rem;
+}
+
+/* NAVBAR */
+
+#navbar {
+  flex-direction: column;
+  position: static;
+}
+
+#navbar .logo {
+  text-align: center;
+}
+
+#navbar ul {
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 0.6rem 0;
+  border-bottom: #1a7dce dotted 1px;
+}
+
+#navbar ul li a:hover {
+  border: none;
+}
+
+/* SHOWCASE */
+
+#showcase .showcase-content {
+  padding: 0 1rem;
+}
+#showcase .showcase-content ul {
+  flex-direction: column;
+}
+
+#showcase .showcase-content ul li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Catalogo de Cursos Ofertados */
+
+#catalogo {
+  padding: 2rem 1rem;
+}
+
+#catalogo .cursos {
+  flex-direction: column;
+  align-items: center;
+}
+
+#catalogo .cursos .curso {
+  width: 90%;
+  margin-bottom: 1.1rem;
+}
+
+/* Diferenciais */
+
+#diferenciais {
+  flex-direction: column;
+  padding: 4rem 0.6rem;
+}
+
+#diferenciais .diferenciais-img {
+  display: none;
+}
+
+/* Contato */
+#contato {
+  flex-direction: column;
+}
+
+#contato .contato-form .form-cell{
+  padding: 0;
+}
+
+#contato .contato-map {
+  height: 12rem;;
+}
