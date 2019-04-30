@@ -168,7 +168,7 @@ p {
   padding: 2rem 2rem;
   width: 33.3%;
   border-radius: 12px;
-  box-shadow: #111 6px 8px 5px;
+  box-shadow: #1a7dce 0 3px 1px, 0 -3px 1px #1a7dce;
   margin: 0 0.75rem;
 }
 #catalogo .cursos .curso i {
