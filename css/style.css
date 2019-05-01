@@ -167,10 +167,21 @@ p {
   flex: 1;
   padding: 2rem 2rem;
   width: 33.3%;
-  border-radius: 12px;
+  border-radius: 10px;
   box-shadow: #1a7dce 0 3px 1px, 0 -3px 1px #1a7dce;
   margin: 0 0.75rem;
 }
+
+#catalogo .cursos .curso:hover {
+  animation: openshadow .4s both;
+}
+
+@keyframes openshadow{
+  to {
+    box-shadow: #1a7dce 0 0, 0 -12px #1a7dce;
+  }
+}
+
 #catalogo .cursos .curso i {
   margin-bottom: 0.8rem;
   color: #fff;
