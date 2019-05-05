@@ -93,7 +93,7 @@ p {
   position: sticky;
   top: 0;
   overflow: hidden;
-  z-index: 1;
+  z-index: 2;
 }
 
 #navbar .logo {
@@ -189,7 +189,6 @@ p {
   /* transform: scale(1.1, 1.2); */
   box-shadow: #1a7dce 0 0, 0 -10px #1a7dce;
   transform: translateY(10px);
-  z-index: 0; /*Sem o z-index o curso pode ficar por cima do menu */
 }
 
 #catalogo .cursos .curso i {
