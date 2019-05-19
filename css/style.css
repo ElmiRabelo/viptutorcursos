@@ -54,10 +54,22 @@ p {
   color: #4ca2e8;
 }
 
+.special-text {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: #1A7DCE;
+}
+
 .l-heading {
   font-size: 3rem;
   letter-spacing: 0.7rem;
   margin-bottom: 0.8rem;
+}
+
+.m-heading {
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  margin: 2rem 0;
 }
 
 .lead {
@@ -135,10 +147,15 @@ p {
   background: rgba(0, 0, 0, 0.8)
 }
 
-#showcase .showcase-content ul {
+#showcase .showcase-vision {
+  display: flex;
+  flex-direction: column;
+}
+
+/* #showcase .showcase-content ul {
   display: flex;
   list-style: none;
-  margin-top: 3rem;
+  margin-top: 1rem;
   color: #f4f4f4;
 }
 
@@ -154,8 +171,8 @@ p {
   background: #333;
   color: #1a7dce;
   box-shadow: none;
-  
 }
+*/
 
 /* Catalogo de Cursos */
 #catalogo {
