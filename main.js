@@ -1,3 +1,15 @@
+///responsive navbar
+function menuSlide() {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('navbar-active');
+
+  });
+}
+
+menuSlide();
 ////--->> Navbar opacity
 window.addEventListener('scroll', () => {
   if(window.scrollY > 180) {
