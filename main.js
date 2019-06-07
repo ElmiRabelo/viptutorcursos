@@ -1,3 +1,56 @@
+////--->> Typing Effect
+class TypeWriter{
+  constructor(txtElement, words, wait=2000){
+    this.txtElement = txtElement;
+    this.words = words;
+    this.wait = parseInt(wait, 10);
+    this.txt = '';
+    this.wordIndex = 0;
+    this.isDeleting = false;
+    this.type();
+  }
+
+  type(){
+    let typeSpeed = 200;
+    const currentWord = this.wordIndex % this.words.length;
+    const fullWord = this.words[currentWord];
+
+    if(this.isDeleting){
+      //remover palavras
+      this.txt = fullWord.substring(0, this.txt.length - 1);
+    } else {
+      //adicionar letras
+      this.txt = fullWord.substring(0, this.txt.length + 1);
+    }
+
+    this.txtElement.innerHTML = `
+      <span class="typing">${this.txt}</span>
+    `;
+
+    if(this.isDeleting){
+      typeSpeed /= 2;
+    }
+
+
+    if(!this.isDeleting && this.txt === fullWord){
+      //fazer uma pausa
+      typeSpeed = this.wait;
+
+      this.isDeleting = true;
+
+    } else if(this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+
+      //ir para proxima palavra
+      this.wordIndex++;
+
+      typeSpeed = 300;
+
+    }
+    setTimeout( () => this.type(), typeSpeed);
+  }
+}
+
 ///responsive navbar
 function menuSlide() {
   const burger = document.querySelector('.burger');
@@ -9,7 +62,19 @@ function menuSlide() {
   });
 }
 
+
+document.addEventListener('DOMContentLoaded', initType);
+
+function initType(){
+  const txtElement = document.querySelector('.special-text');
+  const words = JSON.parse(txtElement.getAttribute('data-words'));
+  const wait = txtElement.getAttribute('data-wait');
+
+  new TypeWriter(txtElement, words, wait);
+}
+// invocando menuSlide
 menuSlide();
+
 ////--->> Navbar opacity
 window.addEventListener('scroll', () => {
   if(window.scrollY > 180) {
@@ -18,29 +83,3 @@ window.addEventListener('scroll', () => {
     document.querySelector('#navbar').style.opacity = 1;
   }
 })
-
-
-////--->> Typing Effect
-  const words = ["Qualidade na Didática", "Agilidade no Ensino", "Ensino Personalizado"];
-  let count = 0;
-  let index = 0;
-  let currentWord = '';
-  let letter = '';
-
-(function type(){
-
-  if(count === words.length){
-    count = 0;
-  }
-  currentWord = words[count];
-  letter = currentWord.slice(0, ++index);
-  
-  document.querySelector('.special-text').textContent = letter;
-  
-  if(letter === currentWord) {
-    count++;
-    index = 0;
-  }
-
-  setTimeout(type, 140);
-})();

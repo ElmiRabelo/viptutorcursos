@@ -1,4 +1,8 @@
 /* Utility Classes */
+.special-text {
+  font-size: 1.7rem;
+}
+
 .l-heading {
   font-size: 2rem;
 }
