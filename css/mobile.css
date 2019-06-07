@@ -32,11 +32,12 @@
   right: 0;
   flex-direction: column;
   align-items: center;
-  height: 27vh;
+  height: 24vh;
   width: 100%; 
   background: #1a7dce;
   transform: translateY(-100%);
   transition: transform 0.3s ease-in;
+  z-index: 1;
 }
 #navbar .navbar-active {
   transform: translateY(65%);
