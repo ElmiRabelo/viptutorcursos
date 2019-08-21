@@ -1,108 +1,108 @@
 /* Utility Classes */
 .special-text {
-  font-size: 1.7rem;
+	font-size: 1.7rem;
 }
 
 .l-heading {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 .lead {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 /* NAVBAR */
 .burger {
-  display: block;
+	display: block;
 }
 
 #navbar {
-  flex-direction: column;
-  align-items: center;
-  position: static;
+	flex-direction: column;
+	align-items: center;
+	position: static;
 }
 
 #navbar .logo {
-  text-align: center;
+	text-align: center;
 }
 
 #navbar .nav-links {
-  position: absolute;
-  top:0;
-  right: 0;
-  flex-direction: column;
-  align-items: center;
-  height: 24vh;
-  width: 100%; 
-  background: #1a7dce;
-  transform: translateY(-100%);
-  transition: transform 0.3s ease-in;
-  z-index: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	flex-direction: column;
+	align-items: center;
+	height: 200px;
+	width: 100%;
+	background: #1a7dce;
+	transform: translateY(-100%);
+	transition: transform 0.3s ease-in;
+	z-index: 1;
 }
 #navbar .navbar-active {
-  transform: translateY(65%);
+	transform: translateY(65%);
 }
 
 #navbar .nav-links li a {
-  display: block;
-  padding: 0.6rem 0;
+	display: block;
+	padding: 0.6rem 0;
 }
 
 #navbar .nav-links li a:hover {
-  border: none;
-  color: #333;
+	border: none;
+	color: #333;
 }
 
 /* SHOWCASE */
 
 #showcase .showcase-content {
-  padding: 0 1rem;
+	padding: 0 1rem;
 }
 #showcase .showcase-content ul {
-  flex-direction: column;
+	flex-direction: column;
 }
 
 #showcase .showcase-content ul li {
-  margin-bottom: 1rem;
-  font-size: 1rem;
+	margin-bottom: 1rem;
+	font-size: 1rem;
 }
 
 /* Catalogo de Cursos Ofertados */
 
 #catalogo {
-  padding: 2rem 1rem;
+	padding: 2rem 1rem;
 }
 
 #catalogo .cursos {
-  flex-direction: column;
-  align-items: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 #catalogo .cursos .curso {
-  width: 90%;
-  margin-bottom: 1.1rem;
+	width: 90%;
+	margin-bottom: 1.1rem;
 }
 
 /* Diferenciais */
 
 #diferenciais {
-  flex-direction: column;
-  padding: 4rem 0.6rem;
+	flex-direction: column;
+	padding: 4rem 0.6rem;
 }
 
 #diferenciais .diferenciais-img {
-  display: none;
+	display: none;
 }
 
 /* Contato */
 #contato {
-  flex-direction: column;
+	flex-direction: column;
 }
 
-#contato .contato-form .form-cell{
-  padding: 0;
+#contato .contato-form .form-cell {
+	padding: 0;
 }
 
 #contato .contato-map {
-  height: 12rem;;
+	height: 12rem;
 }
