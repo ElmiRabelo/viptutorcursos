@@ -258,6 +258,7 @@ p {
   align-items: center;
   padding: 6rem 8rem;
   margin-bottom: 3rem;
+  overflow: hidden;
 }
 
 #diferenciais .diferenciais-img,
